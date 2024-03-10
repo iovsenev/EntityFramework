@@ -26,6 +26,7 @@ namespace AutoLot.Samples
         public DbSet<Make> Makes { get; set; }
         public DbSet<Radio> Radios { get; set; }
         public DbSet<Driver> Drivers { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Make>().ToTable("Makes");
